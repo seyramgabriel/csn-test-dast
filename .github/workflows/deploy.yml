@@ -34,4 +34,4 @@ jobs:
       - name: OWASP ZAP DAST Scan
         continue-on-error: true
         run: |
-          docker run --rm -v $(pwd):/zap/wrk:rw zaproxy/zap-stable zap-baseline.py -t 'example.com' || true
+          docker run --rm -v $(pwd):/zap/wrk:rw zaproxy/zap-stable zap-baseline.py -t 'https://seyramgabriel.github.io/csn-test-dast/' || true
