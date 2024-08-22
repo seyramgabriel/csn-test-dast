@@ -1,0 +1,17 @@
+name: Check Suite Example
+
+on:
+  check_suite:
+    types: [requested, completed]
+
+jobs:
+  suite-response:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Respond to Check Suite
+        run: |
+          echo "Check Suite Triggered"
+          echo "Action: ${{ github.event.action }}"
+          echo "Suite ID: ${{ github.event.check_suite.id }}"
+          echo "Suite Status: ${{ github.event.check_suite.status }}"
