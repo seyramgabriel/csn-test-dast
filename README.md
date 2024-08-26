@@ -1,1 +1,1 @@
-https://github.com/seyramgabriel/csn-test-dast/blob/main/.github/workflows/deploy.yml
+https://github.com/seyramgabriel/csn-test-dast/actions/workflows/deploy.yml/badge.svg
