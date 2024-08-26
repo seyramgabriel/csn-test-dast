@@ -1,7 +1,8 @@
 name: Sample Secure Deployment Workflow
 
 on:
-  deployment
+  page_build
+  # deployment
   # push:
   #   branches:
   #     - main
